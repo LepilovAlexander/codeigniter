@@ -65,6 +65,10 @@ class CI_Controller {
 	 */
 	public function __construct()
 	{
+		session_start();
+		if(!isset($_SESSION['lang']))
+			$_SESSION['lang'] = "EN";
+
 		self::$instance =& $this;
 
 		// Assign all the class objects that were instantiated by the
