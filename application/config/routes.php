@@ -53,5 +53,9 @@ $route['default_controller'] = 'home';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-//маршрутизация странимцы!!!!
+//маршрутизация страницы!!!!
+$route['news/all'] = "news/all";
 $route['news/(:any)'] = "news/index/$1";
+
+$route['admin'] = "admin/main";
+$route['admin/logout'] = "admin/main/logout";
